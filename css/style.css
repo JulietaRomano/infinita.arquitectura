@@ -2312,6 +2312,13 @@ background-color: #dcff81;
 
 /* small mobile :320px. */
 @media only screen and (max-width: 479px) {
+	.boton-responsive, .img_responsive{
+		display: flex;
+		justify-content: center;
+	}
+	.intro-text p{
+		text-align: center;
+	}
 	.logo-area{
 		background-color: #0c0c0c;
 		padding: 5px;
@@ -2372,8 +2379,12 @@ background-color: #dcff81;
 	} */
 	.section-title{
 		margin-bottom: 40px;
+		text-align: center;
 	}
 
+	h3, p{
+		text-align: center;
+	}
 	.spad {
 		padding: 50px 0;
 	}
@@ -2410,10 +2421,112 @@ background-color: #dcff81;
 		padding: 0 15px;
 	}
 
+
+	/*Valores */
+	.service-box {
+		margin-bottom: 0px;
+	}
+	
+	.service-box .sb-icon {
+		margin-bottom: 0px;
+		width: 100px;
+		height: 125px;
+		text-align: center;
+		position: relative;
+		overflow: hidden;
+		background-color: transparent;
+		-webkit-transition: none;
+		-o-transition: none;
+		transition: none;
+		margin: auto;
+		
+	}
+	
+	.service-box .sb-icon .sb-img-icon {
+		padding-bottom: 20px;
+		position: absolute;
+		left: 0px;
+		display: flex;
+		justify-content: center;
+		width: 100%;
+
+		bottom: 0;
+		-webkit-transition: none;
+		-o-transition:none;
+		transition: none;
+
+	}
+	
+	.service-box .sb-icon .sb-img-icon img {
+		opacity: 0.5;
+
+		max-height: 70px;
+		-webkit-transition:none;
+		-o-transition: none;
+		transition:none;
+	}
+	
+	.service-box .sb-icon::after {
+		content: "";
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background: #ffffff00;
+		left: 0px;
+		top: 0px;
+		-webkit-transform: rotate(0deg);
+			-ms-transform: rotate(0deg);
+				transform: rotate(0deg);
+	}
+	
+	.service-box .readmore {
+		font-size: 12px;
+		font-weight: 700;
+		color: #222222;
+		display: inline-block;
+		padding: 2px 0;
+		background-color: transparent;
+		-webkit-transition: none;
+		-o-transition:none;
+		transition:none;
+	}
+	
+	.service-box:hover .sb-icon {
+		background-color: #dbff8100;
+	}
+	
+	.service-box:hover .sb-icon .sb-img-icon {
+		left: 0px;
+		margin-bottom: 0px;
+	}
+	
+	.service-box:hover .sb-icon .sb-img-icon img {
+		opacity: 0.5;
+	}
+	
+	.service-box:hover .readmore {
+		background-color: #dcff81;
+		padding: 0px;
+	}
+	
+
+	/*nuevas perspectivas*/
+
+	.cta-icons{
+		display: flex;
+justify-content: center;
+	}
+
+	/*Portfolio*/
+	.portfolio-filter {
+		text-align: center;
 };
+.portfolio-filter li {
+	
+	margin-bottom: 20px;
+}
 
 
 
 
-
-
+}
